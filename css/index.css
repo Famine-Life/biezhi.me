@@ -58,8 +58,8 @@ header {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 58%;
-    width: 240px;
+    right: 45%;
+    width: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,8 +107,8 @@ header {
 
 #content {
     position: absolute;
-    left: 50%;
-    width: 50%;
+    left: 65%;
+    width: 30%;
 }
 
 #content ul{

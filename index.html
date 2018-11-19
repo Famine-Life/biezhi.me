@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="google-site-verification" content="-DZb2u3qXyUiYbPCdvKiagaeGy09EqKEo8TTr0SdMUQ" />
+    <meta name="msvalidate.01" content="810DA4EBF30BE2D0023135D44B72FD49" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8" />
+    <meta name="keywords" content="练涛,liantao,有没有比我更帅的人?,世界上最帅的人">
+    <meta name="keywords" content="liantao.me">
     <!-- HTML Meta Tags -->
+    <title>练涛——那个比你帅的人</title>
     <meta name="description" content="This is my the home page.
-    Show me to the world.">
+        Show me to the world.
+    有没有比我更帅的人？">
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="练涛 / 个人主页">
+    <meta itemprop="name" content="练涛——那个比你帅的人">
     <meta itemprop="description" content="This is my the home page.
-    Show me to the world.">
-    <meta itemprop="image" content="https://blog.liantao.me/assets/img/cover/earth.jpg">
+        Show me to the world.
+    有没有比我更帅的人？">
+    <meta itemprop="image" content="http://blog.liantao.me/assets/img/cover/earth.jpg">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="http://liantao.me">
+    <meta property="og:url" content="https://liantao.me">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="练涛 / 个人主页">
+    <meta property="og:title" content="练涛——那个比你帅的人">
     <meta property="og:description" content="This is my the home page.
-    Show me to the world.">
-    <meta property="og:image" content="https://blog.liantao.me/assets/img/cover/earth.jpg">
+        Show me to the world.
+    有没有比我更帅的人？">
+    <meta property="og:image" content="http://blog.liantao.me/assets/img/cover/earth.jpg">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="练涛 / 个人主页">
+    <meta name="twitter:title" content="练涛——那个比你帅的人">
     <meta name="twitter:description" content="This is my the home page.
-    Show me to the world.">
-    <meta name="twitter:image" content="https://blog.liantao.me/assets/img/cover/earth.jpg">
+        Show me to the world.
+    有没有比我更帅的人？">
+    <meta name="twitter:image" content="http://blog.liantao.me/assets/img/cover/earth.jpg">
 
     <!-- Meta Tags Generated via http://heymeta.com -->
+
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/TextPopup.css">
-    <title>练涛 / 个人主页</title>
+    <!-- DPlayer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.25.0/DPlayer.min.css">
+
 </head>
+<style>
+    #dplayer{
+        width: 480px;
+        height: 400px;
+        margin:0 auto;
+    }
+</style>
 <body>
 <svg id="clip-paths" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g></g></svg>
 <div id="page">
@@ -70,16 +89,9 @@
                     <svg viewBox="0 0 42 36" xmlns="http://www.w3.org/2000/svg"><path d="M3.025 5.255A1.99 1.99 0 0 1 4.003 5h33.994c.354 0 .688.093.977.256L21 18.5 3.025 5.255zm-1.002 1.45c-.015.098-.023.2-.023.302V18.28v-5.636 17.35C2 31.1 2.902 32 4.003 32h33.994A2.005 2.005 0 0 0 40 29.993v-17.35 5.638V7.008c0-.103-.008-.204-.023-.303L21 20.687 2.023 6.704z"/></svg>
                 </a>
             </div>
-            <!-- 嵌入一个flash -->
-            <embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&amp;v=20161117&amp;vid=k0530mizher&amp;auto=0"
-            allowfullscreen="true"
-            quality="high"
-            width="480" height="400"
-            align="middle"
-            allowscriptaccess="always"
-            type="application/x-shockwave-flash">
         </div>
-
+        <!-- 嵌入一个video -->
+        <div id="dplayer"></div>
     </header>
     <div id="content">
         <section id="articles">
@@ -132,5 +144,18 @@
 <script src="./js/tinycolor.js"></script>
 <script src="./js/mv.es5.js"></script>
 <script src="./js/TextPopup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.25.0/DPlayer.min.js"></script>
+<script>
+        //添加DPlayer播放器
+        var dp = new DPlayer({
+            container: document.getElementById('dplayer'),
+            screenshot: true,
+            video: {
+                url: 'lonely.mp4',
+                pic: 'images/lonely.jpg',
+                autoplay: true
+            }
+        });
+    </script>
 </body>
 </html>
